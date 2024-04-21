@@ -1,0 +1,43 @@
+{
+  // https://nuxt.com/docs/guide/concepts/typescript
+  "extends": "./.nuxt/tsconfig.json",
+  "compilerOptions": {
+    "strict": true,
+    "baseUrl": "./",
+    "noImplicitAny": false,
+    "paths": {
+      "@stores/*": [
+        "stores/*"
+      ],
+      "@constants/*": [
+        "constants/*"
+      ],
+      "@customTypes/*": [
+        "customTypes/*"
+      ],
+      "@themes/*": [
+        "themes/*"
+      ],
+      "@server/*": [
+        "server/*"
+      ],
+      "@utils/*": [
+        "utils/*"
+      ],
+      "@components/*": [
+        "components/*"
+      ],
+      "@composables/*": [
+        "composables/*"
+      ]
+    },
+    "types": [
+      "@pinia/nuxt",
+      "@nuxtjs/vuetify"
+    ]
+  },
+  "exclude": [
+    "node_modules",
+    "stories"
+  ]
+}
