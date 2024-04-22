@@ -5,9 +5,12 @@ import * as directives from 'vuetify/directives';
 const defaultTheme = {
     dark: true,
     colors: {
+        // "background": "#030303",
+        // "surface": "#290000",
+        // "primary": "#930C10",
         "background": "#030303",
-        "surface": "#290000",
-        "primary": "#930C10",
+        "surface": "#131313",
+        "primary": "#290000",
         "secondary": "#F7CE65",
         "error": "#B11716",
         "info": "#FFFEBD",

@@ -1,4 +1,6 @@
 <script setup lang="ts">
+import DiaryTable from "@components/Diary/DiaryTable.vue";
+
 definePageMeta({
   layout: false,
 })
@@ -6,7 +8,7 @@ definePageMeta({
 
 <template>
   <NuxtLayout name="default">
-    <v-btn>Test Button</v-btn>
+    <DiaryTable/>
   </NuxtLayout>
 </template>
 

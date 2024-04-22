@@ -1,6 +1,5 @@
 <script setup lang="ts">
-
-import CampaignCollapsable from "../components/Layout/CampaignCollapsable/CampaignCollapsable.vue";</script>
+import NavigationSidebar from "@components/Navigation/Sidebar/NavigationSidebar.vue";</script>
 
 <template>
   <v-app>
@@ -8,15 +7,20 @@ import CampaignCollapsable from "../components/Layout/CampaignCollapsable/Campai
       <AppBar/>
 
       <v-navigation-drawer>
-        <v-list>
-          <v-list-item title="Navigation drawer"></v-list-item>
-        </v-list>
+        <NavigationSidebar/>
       </v-navigation-drawer>
 
-      <v-main class="" style="min-height: 300px;">
+      <v-main style="min-height: 300px;">
         <CampaignCollapsable/>
 
-        Main Content
+        <div class="mx-16 my-8 h-100">
+          <h1>Chronik</h1>
+
+          <v-sheet class="mx-auto rounded-lg">
+            <slot/>
+          </v-sheet>
+
+        </div>
       </v-main>
     </v-layout>
   </v-app>

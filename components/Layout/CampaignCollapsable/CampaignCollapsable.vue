@@ -5,7 +5,11 @@ import PlayerCharactersCard from "../../Characters/PlayerCharactersCard.vue";</s
 
 <template>
   <v-expansion-panels>
-    <v-expansion-panel title="Faeruns Schicksal">
+    <v-expansion-panel>
+
+      <v-expansion-panel-title>
+        <h2>Faeruns Schicksal</h2>
+      </v-expansion-panel-title>
 
       <v-expansion-panel-text>
         <v-row>
