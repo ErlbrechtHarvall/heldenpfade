@@ -11,16 +11,13 @@ import NavigationSidebar from "@components/Navigation/Sidebar/NavigationSidebar.
       </v-navigation-drawer>
 
       <v-main style="min-height: 300px;">
-        <CampaignCollapsable/>
+        <!--        <CampaignCollapsable/>-->
 
         <div class="mx-16 my-8 h-100">
-          <h1>Chronik</h1>
-
-          <v-sheet class="mx-auto rounded-lg">
-            <slot/>
-          </v-sheet>
-
+          <slot/>
         </div>
+
+        <DetailsSidebarDrawer/>
       </v-main>
     </v-layout>
   </v-app>

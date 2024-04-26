@@ -59,14 +59,12 @@ const lastListItemCssClasses = {
       <v-list-item :title="sidebarSection.title" :subtitle="sidebarSection.subtitle"/>
       <v-divider/>
       <v-list-item v-for="item in sidebarSection.items" link
-                   :title="item.title" :value="item"
-                   color="primary"/>
+                   :title="item.title" :value="item"/>
 
       <div v-if="index + 1 < sidebarSections.length" class="my-8"/>
     </template>
   </v-list>
 </template>
 
-<style scoped lang="scss">
-
+<style scoped>
 </style>

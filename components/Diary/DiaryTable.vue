@@ -35,14 +35,6 @@ const diaryEntries = [
 <template>
   <v-table class="rounded-xl">
     <thead>
-    <tr class="border border-b-lg border-secondary">
-      <th colspan="5" class="text-right">
-        <v-btn class="mr-4" color="primary" size="small">
-          Neuer Eintrag
-        </v-btn>
-      </th>
-    </tr>
-
     <tr>
       <th></th>
       <th class="text-left w-100">
